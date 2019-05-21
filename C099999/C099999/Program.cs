@@ -18,7 +18,7 @@ namespace C099999
             while (true)
             {
                 input = Console.ReadLine();
-                if (input.Equals("fini")) { break;  }
+                if (input.ToLower().Equals("fini")) { break;  }
                 
                 product *= Convert.ToInt32(input);
             }
