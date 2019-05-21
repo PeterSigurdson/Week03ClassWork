@@ -10,17 +10,22 @@ namespace C099999
     {
         static void Main(string[] args)
         {
+            // let's setup an array of int size 10
+
+            int[] red = new int[5];
+
             Console.WriteLine("enter some numbers");
             Console.WriteLine("enter 'fini' when done");
             string input = "";
             int product = 1;
-
+            int i = 0;
             while (true)
             {
                 input = Console.ReadLine();
                 if (input.ToLower().Equals("fini")) { break;  }
                 
-                product *= Convert.ToInt32(input);
+                red[i++] = Convert.ToInt32(input);
+                
             }
 
             Console.WriteLine("the product is {0} ", product);
