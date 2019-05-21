@@ -23,9 +23,12 @@ namespace C099999
             {
                 input = Console.ReadLine();
                 if (input.ToLower().Equals("fini")) { break;  }
-                
                 red[i++] = Convert.ToInt32(input);
-                
+                if (i == red.Length)
+                {
+                    Console.WriteLine("Out of Array Space");
+                    break;
+                }
             }
 
             Console.WriteLine("the product is {0} ", product);
