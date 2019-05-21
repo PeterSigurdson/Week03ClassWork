@@ -16,7 +16,7 @@ namespace C099999
             Console.WriteLine("please enter the 2nd number");
             string num2 = Console.ReadLine();
 
-            int sum = Convert.ToInt32(num1) + Convert.ToInt32(num2);
+            double sum = Convert.ToDouble(num1) / Convert.ToDouble(num2);
 
             Console.WriteLine(sum);
 
