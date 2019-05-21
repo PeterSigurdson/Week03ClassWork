@@ -10,16 +10,20 @@ namespace C099999
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("please enter a number");
-            string num1 = Console.ReadLine();
+            Console.WriteLine("enter some numbers");
+            Console.WriteLine("enter 'fini' when done");
+            string input = "";
+            int product = 1;
 
-            Console.WriteLine("please enter the 2nd number");
-            string num2 = Console.ReadLine();
+            while (true)
+            {
+                input = Console.ReadLine();
+                if (input.Equals("fini")) { break;  }
+                
+                product *= Convert.ToInt32(input);
+            }
 
-            double sum = Convert.ToDouble(num1) / Convert.ToDouble(num2);
-
-            Console.WriteLine(sum);
-
+            Console.WriteLine("the product is {0} ", product);
         }
     }
 }
